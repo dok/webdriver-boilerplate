@@ -1,6 +1,6 @@
 const webdriverio = require('webdriverio');
 const options = {
-  // port: 9515,
+  port: 9515,
   desiredCapabilities: {
     browserName: 'chrome'
   }
