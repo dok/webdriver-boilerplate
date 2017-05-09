@@ -7,7 +7,7 @@
     "test": "mocha tests/*.spec.js",
     "install": "npm install selenium-standalone@latest -g",
     "chromedriver:mac": "./drivers/mac/chromedriver --url-base=/wd/hub",
-    "chromedriver:win": "./drivers/windows/chromedriver.exe --url-base=/wd/hub",
+    "chromedriver:win": "./drivers/windows/chromedriver.exe --url-base=/wd/hub"
   },
   "repository": {
     "type": "git",
