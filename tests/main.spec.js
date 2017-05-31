@@ -2,7 +2,8 @@ const webdriverio = require('webdriverio');
 const options = {
   desiredCapabilities: {
     browserName: 'chrome'
-  }
+  },
+  port: 9515
 };
 const actions = require('../actions/main');
 const expect = require('chai').expect;
