@@ -20,7 +20,7 @@ An opinionated boilerplate for WebDriver
 
 - Run ChromeDriver
   - For mac: `npm run chromedriver:mac`
-  - For windows: `npm run chromedriver:win`
+  - For windows: `.\drivers\windows\chromedriver.exe --url-base=/wd/hub`
 - Run index.js
   - `node index.js`
 - Run tests
