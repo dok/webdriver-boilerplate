@@ -6,8 +6,7 @@ An opinionated boilerplate for WebDriver
 ### Dependencies
 
 - If you are on windows, install [Cmder](http://cmder.net/) before proceeding to the steps below
-- [Git](https://git-scm.com/download/)
-- [Node >v6](https://docs.npmjs.com/getting-started/installing-node)
+- [Node >v6](https://nodejs.org/en/download/)
 
 ### Installation
 
