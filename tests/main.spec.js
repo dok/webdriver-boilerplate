@@ -1,22 +1,33 @@
 const webdriverio = require('webdriverio');
+const expect = require('chai').expect;
+
 const options = {
   desiredCapabilities: {
     browserName: 'chrome'
   },
   port: 9515
 };
-const actions = require('../actions/main');
-const expect = require('chai').expect;
-const SELECTORS = require('../lib/selectors');
+let browser = webdriverio.remote(options);
 
-describe('put your actual tests here', function() {
+describe('An example spec', function() {
   this.timeout(0);
 
+  var client;
   before((done) => {
-    browser.init().then(() => done()).catch(done);
+    client = browser.init().then(() => done()).catch(done);
   });
 
   after((done) => {
-    browser.end().then(() => done()).catch(done);
+    client.end().then(() => done()).catch(done);
   });
-})
+
+  it('should go to google.com', function(done) {
+    client.url('http://google.com')
+          .title()
+          .then(function(result) {
+            expect(result.value).to.equal('Google');
+            done();
+          })
+          .catch(done);
+  });
+});

@@ -1,21 +1,20 @@
-const webdriverio = require('webdriverio');
+const webdriverio = require('webdriverio'); // Get the WebDriverIO module
+
 const options = {
-  port: 9515,
+  port: 9515, // We look for WebDriver on port 9515 
   desiredCapabilities: {
-    browserName: 'chrome'
+    browserName: 'chrome' // Let's use chrome
   }
 };
 
-const actions = require('./actions/main');
-
 let browser = webdriverio.remote(options);
-browser
-  .init()
-  .then(function() {
-    return actions.getUrlTitle(browser, 'http://google.com')
-  })
+
+browser 
+  .init() // initialize the session
+  .url('http://google.com') // go to http://google.com
+  .title() // get the title
   .then(function(title) {
-    console.log('title: ', title);
+    console.log('title: ', title); // console.log logs out things that you put into it, into the terminal.
   })
   .catch(function(e) {
     console.log('error: ', e);

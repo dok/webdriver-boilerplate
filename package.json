@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/*.spec.js",
+    "test": "./node_modules/.bin/mocha tests/*.spec.js",
     "install": "npm install selenium-standalone@latest -g",
     "chromedriver:mac": "./drivers/mac/chromedriver --url-base=/wd/hub"
   },
