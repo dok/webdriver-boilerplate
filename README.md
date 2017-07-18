@@ -5,11 +5,8 @@ An opinionated boilerplate for WebDriver
 
 ### Dependencies
 
-- If you are on windows, install [Cygwin](https://cygwin.com/install.html) before proceeding to the steps below
-- [Git](https://git-scm.com/download/)
-- [Node >v6](https://docs.npmjs.com/getting-started/installing-node)
-- [ChromeDriver](https://chromedriver.storage.googleapis.com/index.html?path=2.29/)
-- [Selenium Standalone](https://www.npmjs.com/package/selenium-standalone)
+- If you are on windows, install [Cmder](http://cmder.net/) before proceeding to the steps below
+- [Node >v6](https://nodejs.org/en/download/)
 
 ### Installation
 
